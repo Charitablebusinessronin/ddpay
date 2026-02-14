@@ -1,0 +1,44 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "neo4j-cypher": {
+      "type": "local",
+      "command": ["npx", "-y", "neo4j-mcpserver"],
+      "enabled": true,
+      "environment": {
+        "NEO4J_URI": "bolt://host.docker.internal:7687",
+        "NEO4J_USER": "neo4j",
+        "NEO4J_PASSWORD": "Kamina2025*"
+      }
+    },
+    "neo4j-memory": {
+      "type": "local",
+      "command": ["npx", "-y", "@sylweriusz/mcp-neo4j-memory-v2"],
+      "enabled": true,
+      "environment": {
+        "NEO4J_URI": "bolt://host.docker.internal:7687",
+        "NEO4J_USER": "neo4j",
+        "NEO4J_PASSWORD": "Kamina2025*"
+      }
+    },
+    "context7": {
+      "type": "local",
+      "command": ["npx", "-y", "@upstash/context7-mcp", "--api-key", "ctx7sk-ec35abd7-3618-43ea-900b-28c0e3946685"],
+      "enabled": true
+    },
+    "notion-mcp-server": {
+      "type": "local",
+      "command": ["npx", "-y", "@notionhq/notion-mcp-server"],
+      "enabled": true,
+      "environment": {
+        "NOTION_TOKEN": "ntn_U79481010438AooMDIvYCPhHWcpqpn9DGJDXTTNVV3udES"
+      }
+    }
+  },
+  "tools": {
+    "neo4j-cypher_*": true,
+    "neo4j-memory_*": true,
+    "context7_*": true,
+    "notion-mcp-server_*": true
+  }
+}
