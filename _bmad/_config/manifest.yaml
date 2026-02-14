@@ -1,0 +1,29 @@
+installation:
+  version: 6.0.0-Beta.8
+  installDate: 2026-02-14T14:52:02.977Z
+  lastUpdated: 2026-02-14T14:52:02.977Z
+modules:
+  - name: core
+    version: 6.0.0-Beta.8
+    installDate: 2026-02-14T14:52:02.627Z
+    lastUpdated: 2026-02-14T14:52:02.627Z
+    source: built-in
+    npmPackage: null
+    repoUrl: null
+  - name: bmm
+    version: 6.0.0-Beta.8
+    installDate: 2026-02-14T14:52:01.629Z
+    lastUpdated: 2026-02-14T14:52:02.627Z
+    source: built-in
+    npmPackage: null
+    repoUrl: null
+  - name: bmb
+    version: 0.1.6
+    installDate: 2026-02-14T14:52:02.581Z
+    lastUpdated: 2026-02-14T14:52:02.977Z
+    source: external
+    npmPackage: bmad-builder
+    repoUrl: https://github.com/bmad-code-org/bmad-builder
+ides:
+  - windsurf
+  - opencode
